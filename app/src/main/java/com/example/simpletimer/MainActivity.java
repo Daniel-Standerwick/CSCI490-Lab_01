@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             myCountDownTimer.start();
             timerHasStarted = true;
-            startB.setText("Stop");
+            startB.setText(R.string.Stop);
 
         }
         else
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             myCountDownTimer.cancel();
             timerHasStarted = false;
-            startB.setText("Reset");
+            startB.setText(R.string.Reset);
         }
 
     }
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         public void onFinish() {
 
-            text.setText("Time's up!");
+            text.setText(R.string.Timesup);
             timeElapsedView.setText("Time Elapsed: " + String.valueOf(startTime));
 
         }
